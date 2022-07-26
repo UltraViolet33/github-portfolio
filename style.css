@@ -56,7 +56,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 ul {
   list-style-type: none;
 }
@@ -150,6 +152,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: #303841;
+  color: #fff;
 }
 
 /*
@@ -187,7 +191,7 @@ nav {
 
 .links a {
   color: var(--clr-grey-3);
-  font-size: 1rem;
+  font-size: 20px;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -208,12 +212,12 @@ nav {
 }
 
 .show-links {
-  height: 8rem;
+  height: 9rem;
 }
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -247,6 +251,11 @@ nav {
 
 /* PROJECTS SECTION */
 
+#projects {
+  padding: 3em;
+  /* width: calc(100% - 6.8rem); */
+}
+
 #projects-title {
   margin: 7px;
 }
@@ -267,6 +276,17 @@ nav {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  padding: 3em;
+  text-align: center;
+  font-size: 1.5em;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.project {
+  border: 1px solid black;
+  width: 100%;
 }
 
 .projects-section {
@@ -287,7 +307,7 @@ nav {
   padding: 2rem 0.5rem;
 }
 
-/* @media (max-width: 28.75em) {
+@media (max-width: 28.75em) {
   .projects-section-header {
     font-size: 4rem;
   }
@@ -328,7 +348,8 @@ nav {
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
-}*/
+  margin-bottom: 1em;
+}
 
 #contact {
   display: flex;
