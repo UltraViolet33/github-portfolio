@@ -1,8 +1,3 @@
-## Responsive Web Design FreeCodeCamp challenges
+## This is my Github Portfolio
 
-## This is the last FreeCodeCamp challenge : Personal Portofolio
-
-## Technologies used :
-
-- HTML
-- CSS
+You can see the main projects I am working on

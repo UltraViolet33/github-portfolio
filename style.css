@@ -1,32 +1,13 @@
 :root {
-  /* dark shades of primary color*/
   --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
   --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
   --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
-  /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -35,8 +16,6 @@
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
 }
 
 *,
@@ -53,12 +32,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
-  /* scrollbar-width: none;  */
 }
-
-/* body::-webkit-scrollbar {
-  display: none; 
-} */
 
 html,
 body {
@@ -97,14 +71,6 @@ h2 {
   font-size: 2rem;
 }
 
-/* h3 {
-  font-size: 1.25rem;
-} */
-
-/* h4 {
-  font-size: 0.875rem;
-} */
-
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
@@ -119,14 +85,6 @@ p {
     font-size: 2.5rem;
   }
 
-  /* h3 {
-    font-size: 1.75rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  } */
-
   body {
     font-size: 1rem;
   }
@@ -138,8 +96,6 @@ p {
     line-height: 1;
   }
 }
-
-
 
 /*
 ===========================================================================     
@@ -203,7 +159,6 @@ nav {
 
 @media screen and (min-width: 800px) {
   .nav-center {
-    /* max-width: 1170px; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -252,13 +207,11 @@ nav {
   color: #fff;
 }
 
-
 /*
 ===========================================================================     
                                   PROJECTS SECTION
 ===========================================================================     
 */
-
 
 #projects {
   padding: 5em 3em;
@@ -272,41 +225,22 @@ nav {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
   margin: 5rem auto;
 }
 
-@media (max-width: 400px){
-  .projects-grid{
+@media (max-width: 400px) {
+  .projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-
   }
 }
 
-/* @media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-} */
-
-
 .project-desc {
-  /* height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover; */
   padding: 3em;
   text-align: center;
   font-size: 1.5em;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .project {
@@ -323,60 +257,20 @@ nav {
   padding: 2rem 0.5rem;
 }
 
-
-/* .projects-section {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: var(--main-blue);
+.link-code {
+  transition: all 1s;
+  color: var(--clr-black);
 }
 
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-} */
-
-
-
-/* @media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-} */
-
-/* .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-} */
-
-
-
-
-/* 
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-} */
-
-/* .project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-  margin-bottom: 1em;
-} */
-
+.link-code:hover {
+  font-size: 30px;
+}
 
 /*
 ===========================================================================     
                                   CONTACT SECTION
 ===========================================================================     
 */
-
 
 #contact {
   display: flex;
@@ -387,11 +281,6 @@ nav {
   background-color: #303841;
   color: white;
 }
-
-/* #contact p {
-  font-size: 30px;
-  margin-bottom: 30px;
-} */
 
 #profil-list {
   margin: 20px 0;
@@ -413,7 +302,6 @@ nav {
   }
 }
 
-
 #profil-list li {
   margin: 10px 0;
 }
@@ -425,25 +313,10 @@ nav {
   font-size: 30px;
 }
 
-/* ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-} */
-
 footer {
   text-align: center;
-  /* height: 20vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
 }
-
-/* #contact,
-footer {
-  background-color: #303841;
-  color: white;
-} */
-
-
