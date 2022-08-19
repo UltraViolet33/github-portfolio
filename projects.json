@@ -1,1 +1,32 @@
-[{"name":"PHP-API-Trainig","description":"A API back-end with PHP about books and a front-end with Vanilla JS","github_link":"https:\/\/github.com\/UltraViolet33\/PHP-API-Trainig","id_project":35},{"name":" Focus-Timer-App","description":"A timer focus mobile App with React Native","github_link":"https:\/\/github.com\/UltraViolet33\/Focus-Timer-App","id_project":34},{"name":"Blog-PHP-MVC","description":"MCV Pattern with PHP training by creating a blog","github_link":"https:\/\/github.com\/UltraViolet33\/Blog-PHP-MVC","id_project":38},{"name":"OCR-App-React","description":"Optical Recognition Character of an image with React","github_link":"https:\/\/github.com\/UltraViolet33\/OCR-App-React","id_project":41},{"name":" Vite-mon-Book-E-Shop","description":"E-Commerce in PHP for the CCI during web developer course","github_link":"https:\/\/github.com\/UltraViolet33\/Vite-mon-Book-E-Shop","id_project":39}]
+[
+    {
+        "name": "PHP-API-Trainig",
+        "description": "A API back-end with PHP about books and a front-end with Vanilla JS",
+        "github_link": "https:\/\/github.com\/UltraViolet33\/PHP-API-Trainig",
+        "id_project": 35
+    },
+    {
+        "name": " Focus-Timer-App",
+        "description": "A timer focus mobile App with React Native",
+        "github_link": "https:\/\/github.com\/UltraViolet33\/Focus-Timer-App",
+        "id_project": 34
+    },
+    {
+        "name": "Blog-PHP-MVC",
+        "description": "MCV Pattern with PHP training by creating a blog",
+        "github_link": "https:\/\/github.com\/UltraViolet33\/Blog-PHP-MVC",
+        "id_project": 38
+    },
+    {
+        "name": "OCR-App-React",
+        "description": "Optical Recognition Character of an image with React",
+        "github_link": "https:\/\/github.com\/UltraViolet33\/OCR-App-React",
+        "id_project": 41
+    },
+    {
+        "name": " Vite-mon-Book-E-Shop",
+        "description": "E-Commerce in PHP for the CCI during web developer course",
+        "github_link": "https:\/\/github.com\/UltraViolet33\/Vite-mon-Book-E-Shop",
+        "id_project": 39
+    }
+]
