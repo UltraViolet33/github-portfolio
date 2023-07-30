@@ -257,6 +257,11 @@ nav {
   padding: 2rem 0.5rem;
 }
 
+.techs {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .link-code {
   transition: all 1s;
   color: var(--clr-black);

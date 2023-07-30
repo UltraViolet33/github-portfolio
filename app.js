@@ -16,7 +16,10 @@ function displayOneProject(project) {
                 <h4 class="project-title">${project.name}</h4>
                 <div class="project-desc">
                   <p>${project.description}</p>
-                  <a href="${project.github_link}" target="_blank" class="link-code">See sourcecode</a>
+                  <p class='techs'>${project.techs.join("|")}</p>
+                  <a href="${
+                    project.github_link
+                  }" target="_blank" class="link-code">See sourcecode</a>
                 </div>
               </div>`;
 
@@ -24,7 +27,7 @@ function displayOneProject(project) {
 }
 
 function displayAllProjects(data) {
-  const htmlProjects = data.map((project) => displayOneProject(project));
+  const htmlProjects = data.map(project => displayOneProject(project));
   let divProjects = document.getElementById("grid");
   divProjects.innerHTML = htmlProjects;
 }
